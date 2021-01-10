@@ -58,7 +58,8 @@ class ApiProductsController extends Controller
      */
     public function filterCategory($categoryId)
     {
-        $products = Products::where('category_id', $categoryId)->get();
+        $products = Products::where('category_id', $categoryId);
+        dd($product)
         return response()->json($products, 200);
     }
 

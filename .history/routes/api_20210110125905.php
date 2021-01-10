@@ -25,7 +25,7 @@ Route::post('token', [ApiAuthController::class, 'login']);
 
 Route::get('products', [ApiProductsController::class, 'index']);
 Route::get('products/{id}', [ApiProductsController::class, 'show']);
-Route::get('products/category/{categoryId}', [ApiProductsController::class, 'filterCategory']);
+Route::get('products/{categoryId}', [ApiProductsController::class, 'show']);
 
 Route::middleware(['auth:api'])->group(function () {
     Route::post('products', [ApiProductsController::class, 'store']);

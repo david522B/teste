@@ -51,15 +51,14 @@ class ApiProductsController extends Controller
     }
 
     /**
-     * Display the specified category resources.
+     * Display the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function filterCategory($categoryId)
     {
-        $products = Products::where('category_id', $categoryId)->get();
-        return response()->json($products, 200);
+        return Products::where('category_id', $categoryId);
     }
 
     /**
