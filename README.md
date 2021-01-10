@@ -18,4 +18,4 @@ Api privada, para ter acesso deve-se informar o token_api, apenas usuarios admin
 
 Para formatar imagens enviadas foi utilizado image.intervention.io
 
-Para filtrar produtos na Api e necessario informar category_id
+Para filtrar produtos na Api e necessario acessar products/category/'id da categoria desejada'
