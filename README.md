@@ -1,4 +1,4 @@
-Pequeno projeto criado, basta fazer o download, criar uma banco de dados chamado teste e rodar o comando 
+Pequeno projeto criado, basta fazer o download, criar uma banco de dados chamado teste, editar o .env e rodar o comando 
 
 php artisan migrate --seed
 
