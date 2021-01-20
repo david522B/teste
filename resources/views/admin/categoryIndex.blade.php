@@ -7,7 +7,15 @@
 @section('content')
   <!-- Modal confirmar se deseja excluir item -->
   @include('excludeModal')
-
+  @if ($errors->any())
+  <div class="alert alert-danger">
+      <ul>
+          @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+          @endforeach
+      </ul>
+  </div>
+  @endif
   <a type="button" href="/admin/categories/create">Criar Categoria</a>
   <hr>
   @foreach ($categories as $category)

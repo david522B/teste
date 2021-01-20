@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\WebProductsController;
-use \App\Http\Controllers\AdminProductsController;
-use \App\Http\Controllers\AdminCategoriesController;
+use \App\Http\Controllers\Admin\AdminProductsController;
+use \App\Http\Controllers\Admin\AdminCategoriesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +17,7 @@ use \App\Http\Controllers\AdminCategoriesController;
 |
 */
 
-Route::get('/', [AuthController::class, 'showLoginForm']);
+Route::get('/', [AuthController::class, 'showLoginForm'])->name('login');
 Route::get('/logout', [AuthController::class, 'logout']);
 
 Route::post('login', [AuthController::class, 'login']);

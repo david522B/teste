@@ -3,8 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Products;
-use App\Http\Controllers\ApiAuthController;
-use App\Http\Controllers\ApiProductsController;
+use App\Http\Controllers\Api\ApiAuthController;
+use App\Http\Controllers\Api\ApiProductsController;
 
 /*
 |--------------------------------------------------------------------------
